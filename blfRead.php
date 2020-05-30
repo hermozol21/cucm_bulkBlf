@@ -1,8 +1,13 @@
 <?php
-$host="";
-$login="";
-$password="";
-$phone="";
+
+//Usage#php blfRead.php -h 192.168.0.10 -l login -p password -d SEP123456789012
+
+$options = getopt("h:l:p:d:");
+
+$host=$options["h"];
+$login=$options["l"];
+$password=$options["p"];
+$phone=$options["d"];
 
 //ini_set("soap.wsdl_cache_enabled", 0);
 

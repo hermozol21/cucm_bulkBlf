@@ -6,11 +6,13 @@
 //Format pliku wejsciowego: Index,BLF Dest,BLF Dirn,Partycja,Label,Pickup(boolean)\n
 //BLF Dest nie jest brany pod uwage.
 
-$host="";
-$login="";
-$password="";
-$phone="";
-$myfile = "";
+$options = getopt("h:l:p:d:f:");
+
+$host=$options["h"];
+$login=$options["l"];
+$password=$options["p"];
+$phone=$options["d"];
+$myfile = $options["f"];
 
 //Czyszczenie cache
 ini_set("soap.wsdl_cache_enabled", 0);
