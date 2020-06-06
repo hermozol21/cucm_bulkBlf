@@ -50,7 +50,7 @@ $handler = fopen($myfile, "r") or die("Unable to open file!");
 
 $busyLampFields = array("busyLampField"=>$busyLampField);
 
-print_r($busyLampFields);
+//print_r($busyLampFields);
 
      try {
     $response = $client->updatePhone(array("name"=>$phone,"busyLampFields"=>$busyLampFields));
